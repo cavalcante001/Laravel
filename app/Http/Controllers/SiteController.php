@@ -17,8 +17,12 @@ class SiteController extends Controller
         return view('bemvindo', $data);
     }
 
-    public function users()
+    public function users(Request $r)
     {
-        return view('usuarios');
+        $data = [
+            'quantidade' => $r->qnt,
+
+        ];
+        return view('usuarios', $data);
     }
 }

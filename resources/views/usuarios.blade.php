@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Atualmente temos x usuários</h1>
+    <h1>Atualmente temos {{ $quantidade }} usuários</h1>
 </body>
 
 </html>

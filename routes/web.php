@@ -19,7 +19,7 @@ Route::get('/', [SiteController::class, 'index']);
 
 Route::get('/sair', [SairController::class, 'sair']);
 
-Route::get('/usuarios', [SiteController::class, 'users']);
+Route::get('/usuarios/{qnt}', [SiteController::class, 'users']);
 
 // Route::get('/', function () {
 //     return 'ainda estou no router';
