@@ -30,6 +30,8 @@ Route::get('/posts/read', [PostController::class, 'read']);
 
 Route::get('/posts/all', [PostController::class, 'all']);
 
+Route::get('/posts/update', [PostController::class, 'update']);
+
 Route::get('/sair', [SairController::class, 'sair']);
 
 Route::get('/usuarios/{qnt}', [SiteController::class, 'users']);

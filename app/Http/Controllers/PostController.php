@@ -46,4 +46,15 @@ class PostController extends Controller
 
         return $posts;
     }
+
+    public function update(Request $request)
+    {
+        // $post = Post::find(3);
+        $posts = Post::where('id', '>', 0)->update([
+            'author' => 'Desconhecido'
+        ]);
+        // $post->title = 'Terceiro post atualizado';
+        // $post->save();
+        return $posts;
+    }
 }
