@@ -32,6 +32,8 @@ Route::get('/posts/all', [PostController::class, 'all']);
 
 Route::get('/posts/update', [PostController::class, 'update']);
 
+Route::get('/posts/delete', [PostController::class, 'delete']);
+
 Route::get('/sair', [SairController::class, 'sair']);
 
 Route::get('/usuarios/{qnt}', [SiteController::class, 'users']);
