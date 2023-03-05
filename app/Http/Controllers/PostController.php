@@ -28,4 +28,22 @@ class PostController extends Controller
         $post->save();
         dd($post);
     }
+
+    public function read(Request $r)
+    {
+        $post = new Post();
+        // $posts = $post->all();
+
+        // o find sempre irá pegar a chave primária
+        $post = $post->find(1);
+
+        return $post;
+    }
+
+    public function all(Request $r)
+    {
+        $posts = Post::all();
+
+        return $posts;
+    }
 }

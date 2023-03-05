@@ -16,9 +16,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/**
+ * CRUD
+ * CREATE - CRIAR DADOS
+ * READ - LER DADOS DO BANCO
+ */
+
 Route::get('/', [SiteController::class, 'index']);
 
 Route::get('/posts/create', [PostController::class, 'create']);
+
+Route::get('/posts/read', [PostController::class, 'read']);
+
+Route::get('/posts/all', [PostController::class, 'all']);
 
 Route::get('/sair', [SairController::class, 'sair']);
 
