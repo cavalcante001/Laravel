@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\SairController;
 use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
@@ -16,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [SiteController::class, 'index']);
+
+Route::get('/posts/create', [PostController::class, 'create']);
 
 Route::get('/sair', [SairController::class, 'sair']);
 
